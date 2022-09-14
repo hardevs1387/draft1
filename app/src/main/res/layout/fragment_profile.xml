@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fedart_logo"
+        android:layout_width="181dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/audiowide"
+        android:scaleY="0.9"
+        android:text="@string/fed_art"
+        android:textColor="#0D47A1"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="193dp"
+        android:layout_height="183dp"
+        app:srcCompat="@drawable/ic_profile"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Federation University, Brisbane, AU"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photos you have uploaded"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="325dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="151dp"
+        android:layout_height="112dp"
+        app:srcCompat="@drawable/brisbane"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="181dp"
+        android:layout_height="112dp"
+        app:srcCompat="@drawable/falls"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="366dp"
+        android:layout_height="230dp"
+        app:srcCompat="@drawable/hotel"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="472dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="189dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/welcome"
+                android:textColor="#2b6fed"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/dscr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_home"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="25dp"
+                android:text="@string/welcome_to_fedart_tourist_guide_application_brisbane_this_beautiful_city_has_a_river_going_from_the_heart_of_the_city"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tg_heading"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dscr"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/brisbane_virtual_tour"
+                android:textColor="#2b6fed"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:layout_below="@+id/tg_heading"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/brisbane" />
+
+            <TextView
+                android:id="@+id/img1dscr"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/brisbane_top_view"
+                android:textAlignment="textEnd"
+                android:textColor="#db5c7a"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="187dp"
+                android:layout_below="@+id/img1dscr"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/hotel"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/img2dscr"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:text="FEDERATION UNIVERSITY"
+                android:textAlignment="textEnd"
+                android:textColor="#db5c7a"
+                android:textSize="12dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/dscr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img2dscr"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="191dp"
+                android:layout_below="@+id/dscr1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-6dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/falls" />
+
+            <TextView
+                android:id="@+id/img3dscr"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img3"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:text="Curtis Falls Mt Tamborine"
+                android:textAlignment="textEnd"
+                android:textColor="#db5c7a"
+                android:textSize="12dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btn_vr_tour"
+                android:layout_width="122dp"
+                android:layout_height="52dp"
+                android:layout_alignStart="@+id/img1"
+                android:layout_alignTop="@+id/img1"
+                android:layout_alignEnd="@+id/img1"
+                android:layout_alignBottom="@+id/img1"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="157dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="11dp"
+                android:background="#6FF11B64"
+                android:text="Start Tour" />
+
+            <TextView
+                android:id="@+id/fedart_logo"
+                android:layout_width="181dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="230dp"
+                android:layout_marginEnd="-1dp"
+                android:fontFamily="@font/audiowide"
+                android:scaleY="0.9"
+                android:text="@string/fed_art"
+                android:textColor="#0F55C1"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
